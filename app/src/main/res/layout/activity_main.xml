@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/hintN1"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="@string/hintN2"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnsoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="37dp"
+        android:onClick="btnsoma"
+        android:text="@string/btnCalc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="btnsub"
+        android:text="@string/btnSub"
+        app:layout_constraintStart_toStartOf="@+id/btnmult"
+        app:layout_constraintTop_toBottomOf="@+id/btnmult" />
+
+    <Button
+        android:id="@+id/btnmult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="btnmult"
+        android:text="@string/btnMult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnsoma" />
+
+    <Button
+        android:id="@+id/btndiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="27dp"
+        android:onClick="btndiv"
+        android:text="@string/btnDiv"
+        app:layout_constraintStart_toStartOf="@+id/btnsoma"
+        app:layout_constraintTop_toBottomOf="@+id/btnsoma" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="76dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/num2"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

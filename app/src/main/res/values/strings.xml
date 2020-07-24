@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Trabalho</string>
+    <string name="btnCalc">Soma</string>
+    <string name="btnMult">Multiplicação</string>
+    <string name="btnDiv">Divisão</string>
+    <string name="btnSub">Subtração</string>
+    <string name="hintN2">Número 2</string>
+    <string name="hintN1">Número 1</string>
+</resources>
